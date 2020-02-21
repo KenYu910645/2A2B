@@ -15,11 +15,11 @@ Now you can enter 4 digit numbers(e.g. '1357' , '0751') to let computer guess, o
 ```
 Do I have to guess myself? (y/n)
 ```
-Enter 'y' if you want computer guess automatically 
+Enter 'y' if you want computer guess automatically.
+
 Enter 'n' to guess secret number yourself, and let computer verify it.
 
-
-If you choose guess yourself, following message will show up and  you have to recussively guess 4 digit number until you get 4A0B. 
+If you choose guess yourself, following message will show up and you have to recussively guess 4 digit number until you get 4A0B. 
 ```
 Give 4 number (enter 'q' to quit) : 1366  
 your guess is  [1, 3, 6, 6]
@@ -72,9 +72,11 @@ posible:  [(8, 9, 4, 2)]
 the secret answer is  (8, 9, 4, 2)
 I used  7 guess to win the game.
 ```
-In this example, computer finally got the ans : (8,9,4,2), and it  take 7 guesses to complete this game. Theoretically, it won't take more than 9 steps to win.
+In this example, computer finally got the ans : (8,9,4,2), and it take 7 guesses to complete this game. Theoretically, it won't take more than 9 steps to win.
 
 Previous messages show the guessing process that computer did. 
 HISTORY means numbers computer has guessed.
+
 Good stuff means numbers that definitely in secret number.
-Bad stuff  means numbers that definitely NOT in secret number.
+
+Bad stuff means numbers that definitely NOT in secret number.
