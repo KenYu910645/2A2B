@@ -32,7 +32,7 @@ bdStuff = [0,1,2,3,4,5,6,7,8,9]
 #             This means 8 and 9 should add in gdStuff[]
 # [ 0 , 2 , 2 , 8 , 9 , 102 ] 
 #                        ^
-#            This mean should deal with step No.102                  
+#            This mean should deal with step No.102
 dataBase = [[0,2,2,8,9,102],
  [0,3,1,101,105],
  [1,3,0,101,104],
@@ -353,14 +353,14 @@ def fourA ():
 
 # main start here
 print("Let's play 2A2B !!")
-msg = input("Give me a secret number!!(press enter to generate random number):")
+msg = input("Give me a 4 digit secret number!!(or press enter to generate a random number):")
 if msg == '':
   secret = ranGen()
 else:
   secret = numToList(int(msg))
 print("The answer is " , secret)
 
-msg = input("Do I have to test myself? (y/n)")
+msg = input("Do I have to guess myself? (y/n)")
 if msg == 'y' or msg == '':
   hintGiven([0,1,2,3])
   hintGiven([4,5,6,7])
@@ -441,4 +441,8 @@ else:
     guess = numToList(int(msg))
     print ("your guess is ", guess)
     printHint(hintGiven(guess))
+    if hintGiven(guess) == 40: 
+      print ("CORRENT ANS!!")
+      print ("bye bye ~~")
+      break 
 
